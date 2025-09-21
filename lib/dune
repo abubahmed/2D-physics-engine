@@ -1,0 +1,13 @@
+(library
+ (name physics_engine_lib)
+ (libraries async core graphics core_unix.command_unix)
+ (inline_tests)
+ (preprocess
+  (pps ppx_jane)))
+
+(env
+ (dev
+  (flags
+   (:standard -w -20 -w -27 -w -32 -w -34 -w -37 -w -39 -w -69)))
+ (release
+  (flags (:standard))))

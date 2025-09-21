@@ -1,0 +1,6 @@
+(executable
+ (public_name physics_engine_lib)
+ (name main)
+ (preprocess
+  (pps ppx_jane))
+ (libraries physics_engine_lib async core core_unix.command_unix))
